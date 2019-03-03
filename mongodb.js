@@ -21,12 +21,14 @@ MongoClient.connect(connectionURL, (error, client)=>{
     // });
 
 
+    
     db.collection('Todos').find({completed: true}).toArray((error, todos)=>{
         if(error){
             return console.log('errror');
         }
         console.log(todos);
     });
+    
 
 // db.collection('Users').findOne({_id:new ObjectID("5c77bd332be3fd68c4c7bcc7")}, (error, user)=>{
 // if(error){
