@@ -12,10 +12,10 @@ var newUser = new User({
 email: "baba"
 });
 
-newUser.save().then((doc)=>{
-        console.log('saved user', doc)
-    }, (e)=> {
-        console.log('failed', e);
-    });
+// newUser.save().then((doc)=>{
+//         console.log('saved user', doc)
+//     }, (e)=> {
+//         console.log('failed', e);
+//     });
 
 module.exports={User};
