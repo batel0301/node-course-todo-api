@@ -2,7 +2,7 @@ const expect = require('expect');
 const request = require('supertest');
 
 const {app} = require('./../server.js');
-const {Todo} = require('./../modules/todo.js');
+const {Todo} = require('./../models/todo.js');
 
 const todos =[
     {
